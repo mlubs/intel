@@ -452,6 +452,15 @@ function createAllCharts() {
             tension: 0.1
         },
         {
+            label: 'USDBRL_GPC',
+            data: filteredData.map(d => d.USDBRL_GPC),
+            borderColor: chartColors.violet,
+            backgroundColor: chartColors.violet + '30',
+            yAxisID: 'y',
+            tension: 0.1,
+            hidden: true
+        },
+        {
             label: 'CNYBRL',
             data: filteredData.map(d => d.CNYBRL),
             borderColor: chartColors.terracottaLight,
